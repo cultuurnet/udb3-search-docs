@@ -1,5 +1,10 @@
 # Summary
 
+## Getting started
+
 * [Introduction](README.md)
-* [bla](bla.md)
+
+## Searching events & places
+
+* [Free text search](free-text-search.md)
 
