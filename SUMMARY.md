@@ -4,7 +4,7 @@
 
 * [Introduction](README.md)
 * [Pagination](pagination.md)
-* [Embedding results' bodies](embedding-full-result-bodies.md)
+* [Embedding result bodies](embedding-full-result-bodies.md)
 
 ## Searching events & places
 
