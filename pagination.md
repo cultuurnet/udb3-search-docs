@@ -3,7 +3,7 @@
 Every search endpoint supports pagination using two url parameters:
 
 * `start` : The number of results to skip \(`int`\) \(optional, defauls to 0\)
-* `limit`: The number of results to return in a single page \(optional, defaults to 30\)
+* `limit`: The number of results to return in a single page \(`int`\) \(optional, defaults to 30\)
 
 For example, when searching events & places:
 
@@ -30,7 +30,7 @@ GET https://search.uitdatabank.be/offers/?start=10&limit=5
 }
 ```
 
-Because we skipped the first 10 results, and we only have a total of 12 results, we only get the last 2 one in this particular request. 
+Because we skipped the first 10 results, and we only have a total of 12 results, we only get the last 2 one in this particular request.
 
 Note that the response also includes the limit included in the request, as `itemsPerPage`. This is because the API might decide to return fewer results if the specified limit is too high. Because of this, you should never assume that the specified limit will also be respected and you should always check `itemsPerPage`.
 
