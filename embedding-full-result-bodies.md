@@ -5,7 +5,7 @@ By default the API endpoints only return a list of links to the individual searc
 To get the actual bodies of the results, there are two options:
 
 * Loop over the results yourself and perform GET requests using the given URLs.
-* Use the built-in `embed`  parameter \(`bool`\) on the API endpoints, which does the same for you, but server-side.
+* Use the built-in `embed`  parameter \(`bool,` default to `false`\) on the API endpoints, which does the same for you, but server-side.
 
 For example:
 
