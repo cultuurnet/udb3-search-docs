@@ -2,8 +2,8 @@
 
 Every search endpoint supports pagination using two url parameters:
 
-* `start` : The number of results to skip \(`int`\) \(optional, defauls to 0\)
-* `limit`: The number of results to return in a single page \(`int`\) \(optional, defaults to 30\)
+* `start` : The number of results to skip \(`int`\) \(defauls to 0\)
+* `limit`: The number of results to return in a single page \(`int`\) \(defaults to 30\)
 
 For example, when searching events & places:
 
