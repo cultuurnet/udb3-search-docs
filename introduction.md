@@ -6,7 +6,7 @@ Events & places can be searched from the following endpoint:
 GET https://search.uitdatabank.be/offers/
 ```
 
-The response body from this endpoint looks like this:
+A typical response from this endpoint looks like this:
 
 ```js
 {
