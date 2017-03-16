@@ -8,6 +8,6 @@
 
 ## Searching events & places
 
-* [Offers endpoint](offers endpoint.md)
+* [Offers endpoint](offers-endpoint.md)
 * [Free text search](free-text-search.md)
 
