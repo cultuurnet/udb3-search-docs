@@ -22,7 +22,7 @@ The following fields will be searched when using the `q` parameter with free tex
 
 Free text search is always case-insensitive, even for IDs.
 
-For example, when searching for the uuid `2327d4d9-f0a8-4c81-abd6-5bfa87dff1dd`, you will still get results if the uuid is actually  `2327D4D9-F0A8-4C81-ABD6-5BFA87DFF1DD`.
+For example, when searching for the uuid `2327d4d9-f0a8-4c81-abd6-5bfa87dff1dd`, you will still get results even if the uuid is actually  `2327D4D9-F0A8-4C81-ABD6-5BFA87DFF1DD`.
 
 ## Operators
 
