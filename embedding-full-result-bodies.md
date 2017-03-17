@@ -23,7 +23,7 @@ Notice that the response will now contain actual JSON-LD documents:
   "totalItems": 12,
   "member": [
     {
-      "@id": "http://udb-silex.dev/place/39e6d5ee-c3d6-453a-bcb5-4e6e0eaf7054",
+      "@id": "https://io.uitdatabank.be/place/39e6d5ee-c3d6-453a-bcb5-4e6e0eaf7054",
       "@type": "Place",
       "@context": "/contexts/place",
       "name": {
