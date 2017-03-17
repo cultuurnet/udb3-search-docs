@@ -23,7 +23,7 @@ GET https://search.uitdatabank.be/offers/?q=zwembad labels:uitpas*
 
 This will execute a free text search for the term `zwembad`, combined with a label search for `uitpas*`.
 
-Because of this, it is important to encapsulate field values that contain spaces, like so:
+Because of this, it is important to encapsulate field values that contain spaces, like this:
 
 ```
 GET https://search.uitdatabank.be/offers/?q=zwembad labels:"uitpas leuven"
