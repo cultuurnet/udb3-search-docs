@@ -18,7 +18,7 @@ npm install gitbook-cli -g
 When finished, navigate to a clone of this repository on your local machine and run:
 
 ```
-gitbook install # you only need to run this once
+gitbook install
 gitbook serve
 ```
 
