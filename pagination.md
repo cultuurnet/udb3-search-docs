@@ -19,11 +19,11 @@ GET https://search.uitdatabank.be/offers/?start=10&limit=5
   "totalItems": 12,
   "member": [
     {
-      "@id": "http://udb-silex.dev/event/441a5831-a65e-44fa-81ef-5c47e9c57a05",
-      "@type": "Event"
+      "@id": "https://io.uitdatabank.be/event/441a5831-a65e-44fa-81ef-5c47e9c57a05",
+      "@type": "Place"
     },
     {
-      "@id": "http://udb-silex.dev/event/d8cac5d6-c2b5-4c8d-b730-d9801a920c89",
+      "@id": "https://io.uitdatabank.be/event/d8cac5d6-c2b5-4c8d-b730-d9801a920c89",
       "@type": "Event"
     }
   ]
