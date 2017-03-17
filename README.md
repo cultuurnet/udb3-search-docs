@@ -26,7 +26,15 @@ You can then view the docs by navigating to [http://localhost:4000](http://local
 
 ## Making changes
 
-It is recommended to use the [Gitbook Editor](https://www.gitbook.com/editor) to make changes to the docs.
+It is recommended to use the [GitBook Editor](https://www.gitbook.com/editor) to make changes to the docs.
 
+Create a directory like this on your system:
 
+```
+GitBooks/Import/udb3-search-docs
+```
+
+Where `udb3-search-docs` is a clone of this repository.
+
+Now open the GitBook Editor and 
 
