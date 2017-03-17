@@ -18,7 +18,7 @@ npm install gitbook-cli -g
 When finished, navigate to a clone of this repository on your local machine and run:
 
 ```
-gitbook install # to install plugins
+gitbook install # to install plugins like the API docs theme
 gitbook serve
 ```
 
