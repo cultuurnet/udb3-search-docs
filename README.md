@@ -40,3 +40,5 @@ Now open the GitBook Editor application and click `Change Library Path...` under
 
 Navigate to the `GitBooks` directory in the dialog that opens, and open that directory in GitBook Editor as the library.
 
+You should now 
+
