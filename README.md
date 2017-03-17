@@ -36,5 +36,7 @@ GitBooks/Import/udb3-search-docs
 
 Where `udb3-search-docs` is a clone of this repository.
 
-Now open the GitBook Editor and 
+Now open the GitBook Editor and click "Change Library Path..." under the `GitBook Editor` menu item.
+
+Navigate to the `GitBooks` directory in the dialog that opens, and open that directory in GitBook Editor as the library.
 
