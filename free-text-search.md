@@ -16,7 +16,7 @@ The following fields will be searched when using the `q` parameter with free tex
 
 * IDs only return results if the complete ID is given in the free text input.
 * Name & description fields are translatable, but currently only the NL translations are searched when using free text search.
-* Searching for a part of a word does not work yet. For example, searching for "Fiets" will not return an event with the title "Fietsen langs de Dijle".
+* Searching for a part of a word does not work yet. For example, searching for `Fiets` will not return an event with the title `Fietsen langs de Dijle`.
 
 ## Operators
 
@@ -32,4 +32,26 @@ GET https://search.uitdatabank.be/offers/?q=(wandelen OR fietsen) AND dijle
 ```
 
 See the [Query String Query syntax for ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax) for more info, or more documentation on [advanced queries](/advanced-queries.md).
+
+## Exact matches
+
+By default the free text search looks for one or more matches with any of the given terms, regardless of their order and/or position in the document's text.
+
+For example, both an event with the title `Lekker veggie` and a different event with the title `Veggie eten is lekker` would be returned as results when searching for `q=lekker veggie`.
+
+To limit the results to exact matches, encapsulate the given search terms with quotes:
+
+```
+GET https://search.uitdatabank.be/offers/?q="lekker veggie"
+```
+
+This will only return results that have `lekker veggie` in exactly that order in their text.
+
+Encapsulated terms can still be combined with other terms, for example:
+
+```
+GET https://search.uitdatabank.be/offers/?q="lekker veggie" eten bereiden klaarmaken
+```
+
+
 
