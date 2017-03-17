@@ -45,26 +45,26 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 
 | Field | Type | Comments |
 | :--- | :--- | :--- |
-| id | String | Complete matches only\* |
+| id | String | Complete matches only by default\* |
 | name.nl | String |  |
 | name.fr | String |  |
 | name.de | String |  |
 | name.en | String |  |
-| labels | String | Complete matches only\* |
+| labels | String | Complete matches only by default\* |
 | typicalAgeRange | Integer range |  |
 | addressLocality | String |  |
 | postalCode | String | Currently only supports numerical codes \(eg. 3000\) |
 | streetAddress | String |  |
-| location.id | String | Complete matches only\* |
+| location.id | String | Complete matches only by default\* |
 | location.name.nl | String |  |
 | location.name.fr | String |  |
 | location.name.de | String |  |
 | location.name.en | String |  |
-| organizer.id | String | Complete matches only\* |
+| organizer.id | String | Complete matches only by default\* |
 | organizer.name.nl | String |  |
 | organizer.name.fr | String |  |
 | organizer.name.de | String |  |
 | organizer.name.fr | String |  |
 
-\* Wildcards allowed
+\* Wildcards allowed to search for partial matches
 
