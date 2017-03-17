@@ -12,7 +12,7 @@
 * [Offers endpoint](offers-endpoint.md)
 * [Free text search](free-text-search.md)
 * [Labels](labels.md)
-* Age
+* [Age](age.md)
 * Region
 * [Advanced queries](advanced-queries.md)
 
