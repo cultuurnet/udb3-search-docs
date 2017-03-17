@@ -8,7 +8,7 @@ For example:
 GET https://search.uitdatabank.be/offers/?q=(labels:uitpas* OR labels:paspartoe) AND typicalAgeRange:[* TO 12]
 ```
 
-The syntax is based on the Lucene query syntax. More info can be found in the ElasticSearch documents:  
+The syntax is based on the Lucene query syntax. More info can be found in the ElasticSearch documentation:  
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html\#query-string-syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)
 
 ## Supported fields
@@ -37,6 +37,4 @@ The syntax is based on the Lucene query syntax. More info can be found in the El
 | organizer.name.fr | String |  |
 
 \* Wildcards allowed
-
- 
 
