@@ -24,3 +24,9 @@ gitbook serve
 
 You can then view the docs by navigating to [http://localhost:4000](http://localhost:4000).
 
+## Making changes
+
+It is recommended to use the [Gitbook Editor](https://www.gitbook.com/editor) to make changes to the docs.
+
+
+
