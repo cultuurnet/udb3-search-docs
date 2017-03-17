@@ -16,11 +16,11 @@ A typical response from this endpoint looks like this:
   "totalItems": 12,
   "member": [
     {
-      "@id": "http://udb-silex.dev/place/39e6d5ee-c3d6-453a-bcb5-4e6e0eaf7054",
+      "@id": "https://io.uitdatabank.be/place/39e6d5ee-c3d6-453a-bcb5-4e6e0eaf7054",
       "@type": "Place"
     },
     {
-      "@id": "http://udb-silex.dev/event/23017cb7-e515-47b4-87c4-780735acc942",
+      "@id": "https://io.uitdatabank.be/event/23017cb7-e515-47b4-87c4-780735acc942",
       "@type": "Event"
     },
     ...
