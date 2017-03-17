@@ -28,17 +28,21 @@ You can then view the docs by navigating to [http://localhost:4000](http://local
 
 It is recommended to use the [GitBook Editor](https://www.gitbook.com/editor) to make changes to the docs.
 
-Create a directory like this on your system:
+Create a directory structure like this on your system, where `udb3-search-docs` is a clone of this repository:
 
 ```
-GitBooks/Import/udb3-search-docs
+GitBooks/Import/udb3-search-docs 
 ```
 
-Where `udb3-search-docs` is a clone of this repository.
+Now open the GitBook Editor application and click `Change Library Path...` under the `GitBook Editor` menu item. Navigate to the `GitBooks` directory in the dialog that opens, and open that directory in GitBook Editor as the library.
 
-Now open the GitBook Editor application and click `Change Library Path...` under the `GitBook Editor` menu item.
+You should now be able to open `udb3-search-docs` from your GitBook Editor library window.
 
-Navigate to the `GitBooks` directory in the dialog that opens, and open that directory in GitBook Editor as the library.
+When you're done making changes, run the following command in the `udb3-search-docs` directory:
 
-You should now 
+```bash
+git push origin
+```
+
+
 
