@@ -5,6 +5,7 @@
 * [Introduction](README.md)
 * [Pagination](pagination.md)
 * [Embedding result bodies](embedding-full-result-bodies.md)
+* [Case sensitivity](case-sensitivity.md)
 
 ## Searching events & places
 
