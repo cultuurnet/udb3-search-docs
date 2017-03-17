@@ -11,7 +11,7 @@ The API is available at the following urls:
 
 To build these docs on your local machine, install `gitbook` using `npm`:
 
-```
+```bash
 npm install gitbook-cli -g
 ```
 
