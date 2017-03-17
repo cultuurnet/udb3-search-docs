@@ -17,5 +17,5 @@ A complete list of region IDs can be found here:
 * Municipalities: [https://github.com/cultuurnet/geojson-data/tree/master/geojson/BE/gem](https://github.com/cultuurnet/geojson-data/tree/master/geojson/BE/gem)
 * Provinces: [https://github.com/cultuurnet/geojson-data/tree/master/geojson/BE/prv](https://github.com/cultuurnet/geojson-data/tree/master/geojson/BE/prv)
 
-
+The file names represent the region IDs \(without the .geojson extension\).
 
