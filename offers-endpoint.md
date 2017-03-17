@@ -28,7 +28,7 @@ A typical response from this endpoint looks like this:
 }
 ```
 
-This endpoints supports the following global features:
+This endpoint supports the following global features:
 
 * [Pagination](/pagination.md)
 * [Embedding result bodies](/embedding-full-result-bodies.md)
