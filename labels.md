@@ -10,7 +10,7 @@ You can search by label\(s\) using two methods:
 You can filter by one or more labels using the `labels` URL parameter.
 
 ```
-GET https://search.uitdatabank.be/offers/?labels=uitpas&labels=paspartoe
+GET https://search.uitdatabank.be/offers/?labels[]=uitpas&labels[]=paspartoe
 ```
 
 You will only get results with complete matches. An event with for example the label `UiTPAS Leuven` will not be returned by the query above. Wildcards are not supported using the URL parameter!
