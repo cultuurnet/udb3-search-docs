@@ -47,7 +47,7 @@ To fix this, you should use the `textLanguage` parameter as described in the [fr
 
 ## Incomplete translations
 
-Using either the URL parameter or advanced queries to filter by language\(s\), you might still get results that only have partial translations. This is because as soon as a single field is translated to a specific language, the corresponding document is considered to have a translation \(albeit an incomplete one\).
+Using either the URL parameter or advanced queries to filter by language\(s\), you might still get results that only have partial translations. This is because as soon as a single field is translated to a specific language, the whole document is considered to have a translation \(albeit an incomplete one\).
 
 If you require specific fields to be translated, you can filter out documents that don't have translations for those fields by using [advanced queries](/advanced-queries.md) to check for the existence of a field translation:
 
@@ -56,4 +56,12 @@ GET https://search.uitdatabank.be/offers/?q=_exists_:name.fr AND _exists_:descri
 ```
 
 The example above will filter out any documents that do not have both their `name` and `description` translated to French.
+
+The same way, you can also search for documents that are missing translations for specific fields:
+
+```
+GET https://search.uitdatabank.be/offers/?q=_missing_:name.fr OR _missing_:description.fr
+```
+
+This will return all documents that are missing French translations for either `name` and/or `description`.
 
