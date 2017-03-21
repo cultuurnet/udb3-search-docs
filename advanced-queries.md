@@ -50,6 +50,10 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | name.fr | String |  |
 | name.de | String |  |
 | name.en | String |  |
+| description.nl | String |  |
+| description.fr | String |  |
+| description.de | String |  |
+| description.en | String |  |
 | labels | String | Complete matches only by default\* |
 | typicalAgeRange | Integer range |  |
 | addressLocality | String |  |
@@ -64,7 +68,7 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | organizer.name.nl | String |  |
 | organizer.name.fr | String |  |
 | organizer.name.de | String |  |
-| organizer.name.fr | String |   |
+| organizer.name.fr | String |  |
 
 \* Wildcards allowed to search for partial matches
 
