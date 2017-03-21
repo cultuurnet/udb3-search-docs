@@ -50,10 +50,10 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | name.fr | String |  |
 | name.de | String |  |
 | name.en | String |  |
-| description.nl |  |  |
-| description.fr |  |  |
-| description.de |  |  |
-| description.en |  |  |
+| description.nl | String |  |
+| description.fr | String |  |
+| description.de | String |  |
+| description.en | String |  |
 | labels | String | Complete matches only by default\* |
 | typicalAgeRange | Integer range |  |
 | addressLocality | String |  |
