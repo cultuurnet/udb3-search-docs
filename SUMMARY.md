@@ -11,6 +11,7 @@
 
 * [Offers endpoint](offers-endpoint.md)
 * [Free text search](free-text-search.md)
+* [Languages](languages.md)
 * [Labels](labels.md)
 * [Age](age.md)
 * [Region](region.md)
