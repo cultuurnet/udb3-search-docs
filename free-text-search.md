@@ -53,5 +53,21 @@ Encapsulated terms can still be combined with other terms, for example:
 GET https://search.uitdatabank.be/offers/?q="lekker veggie" eten bereiden klaarmaken
 ```
 
+## Localization \(Translations\)
 
+By default the free text search looks for matching terms in both the original documents and their translations.
+
+To limit your free text queries to one or more specific languages, you can use the `textLanguages` URL parameter.
+
+```
+GET https://search.uitdatabank.be/offers/?q="the editors"&textLanguages=nl
+```
+
+You can search through multiple languages by repeating the same parameter with a different value:
+
+```
+GET https://search.uitdatabank.be/offers/?q="the editors"&textLanguages=nl&textLanguages=fr
+```
+
+Note that the `textLanguages` parameter does not filter documents by their available languages. So when searching in both `nl` and `fr`, you can get results that only have either one language but still have a matching term in that specific language.
 
