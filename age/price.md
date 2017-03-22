@@ -7,7 +7,7 @@ You can search by price using two methods:
 
 In both methods it is possible to either search by an exact price or by a price range.
 
-A price parameter is now always treated as EUR.
+Currently a price parameter is always treated as EUR.
 
 ## Url parameter
 
@@ -33,7 +33,7 @@ This will look for all events and places that have a price that is within the gi
 
 Both `minPrice` and `maxPrice` are optional and can be used on their own, or together.
 
-For example, you could search for all events with a maximum price of 25 EUR, without having to specify a maximum price:
+For example, you could search for all events with a maximum price of 25 EUR, without having to specify a minimum price:
 
 ```
 GET https://search.uitdatabank.be/offers/?maxPrice=25
@@ -41,17 +41,17 @@ GET https://search.uitdatabank.be/offers/?maxPrice=25
 
 ## Advanced queries
 
-Using the `q` parameter, you can execute more [advanced queries](/advanced-queries.md) than by using the `price` and/or `minPrice` and/or `maxPrice` URL parameter.
-
 ### Exact price
 
 It is possible to exactly match the price of an event or place:
 
 ```
-GET https://search.uitdatabank.be/offers/?q=price:19.99
+GET https://search.uitdatabank.be/offers/?q=price:19.99 OR price:99.99
 ```
 
 ### Price range
+
+Using the `q` parameter, you can execute more [advanced queries](/advanced-queries.md) than by using the `price` and/or `minPrice` and/or `maxPrice` URL parameter.
 
 It is possible to search on a range of prices:
 
