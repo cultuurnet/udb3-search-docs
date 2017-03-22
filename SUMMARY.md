@@ -13,6 +13,7 @@
 * [Free text search](free-text-search.md)
 * [Labels](labels.md)
 * [Age](age.md)
+* [Price](age/price.md)
 * [Region](region.md)
 * [Advanced queries](advanced-queries.md)
 
