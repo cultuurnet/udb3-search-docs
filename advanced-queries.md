@@ -33,7 +33,7 @@ If we don't encapsulate `uitpas leuven` with quotes in the example above, `leuve
 
 Make sure to escape any quotes in the field values themselves if you encapsulate them!
 
-For example, a valid label in UiTDatabank could be `"dag van de fiets"` \(with quotes!\).
+For example, a valid label in UiTdatabank could be `"dag van de fiets"` \(with quotes!\).
 
 To search for this label in an advanced query, it should be escaped and encapsulated like this:
 
