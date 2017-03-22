@@ -64,11 +64,13 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | location.name.fr | String |  |
 | location.name.de | String |  |
 | location.name.en | String |  |
+| location.labels | String | Complete matches only by default\* |
 | organizer.id | String | Complete matches only by default\* |
 | organizer.name.nl | String |  |
 | organizer.name.fr | String |  |
 | organizer.name.de | String |  |
 | organizer.name.fr | String |  |
+| organizer.labels | String | Complete matches only by default\* |
 
 \* Wildcards allowed to search for partial matches
 
