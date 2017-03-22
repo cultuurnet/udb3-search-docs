@@ -14,6 +14,7 @@
 * [Languages](languages.md)
 * [Labels](labels.md)
 * [Age](age.md)
+* [Price](price.md)
 * [Region](region.md)
 * [Advanced queries](advanced-queries.md)
 
