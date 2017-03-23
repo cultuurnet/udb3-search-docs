@@ -60,7 +60,7 @@ The example above will filter out any documents that do not have both their `nam
 The same way, you can also search for documents that are missing translations for specific fields:
 
 ```
-GET https://search.uitdatabank.be/offers/?q=_missing_:name.fr OR _missing_:description.fr
+GET https://search.uitdatabank.be/offers/?q=!(_exists_:name.fr) OR !(_exists_:description.fr)
 ```
 
 This will return all documents that are missing French translations for either `name` and/or `description`.
