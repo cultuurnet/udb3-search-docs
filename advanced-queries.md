@@ -55,6 +55,7 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | description.de | String |  |
 | description.en | String |  |
 | languages | String | See [Languages](/languages.md) |
+| audienceType | String | See [Audience type](audience-type.md) |
 | labels | String | Complete matches only by default\* |
 | typicalAgeRange | Integer range |  |
 | addressLocality | String |  |
