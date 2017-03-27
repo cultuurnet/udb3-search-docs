@@ -14,5 +14,6 @@
 * [Labels](labels.md)
 * [Age](age.md)
 * [Region](region.md)
+* [Geo distance](geo-distance.md)
 * [Advanced queries](advanced-queries.md)
 
