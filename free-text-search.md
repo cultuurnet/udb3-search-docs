@@ -71,3 +71,5 @@ GET https://search.uitdatabank.be/offers/?q="the editors"&textLanguages[]=nl&tex
 
 Note that the `textLanguages` parameter does not filter documents by their available languages. For example, when searching in both `nl` and `fr`, you can get results that only have either one language but still have a matching term in that specific language.
 
+To actually filter documents by their available languages, see [Languages](/languages.md).
+

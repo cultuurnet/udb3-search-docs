@@ -11,8 +11,10 @@
 
 * [Offers endpoint](offers-endpoint.md)
 * [Free text search](free-text-search.md)
+* [Languages](languages.md)
 * [Labels](labels.md)
 * [Age](age.md)
+* [Price](price.md)
 * [Region](region.md)
 * [Geo distance](geo-distance.md)
 * [Advanced queries](advanced-queries.md)
