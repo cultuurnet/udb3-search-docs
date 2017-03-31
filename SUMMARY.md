@@ -16,5 +16,6 @@
 * [Age](age.md)
 * [Price](price.md)
 * [Region](region.md)
+* [Geo distance](geo-distance.md)
 * [Advanced queries](advanced-queries.md)
 
