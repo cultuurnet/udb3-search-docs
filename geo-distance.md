@@ -12,5 +12,5 @@ GET https://search.uitdatabank.be/offers/?coordinates=50.8511740,4.3386740&dista
 
 The coordinates should be decimal representations of latitude & longitude \(in that order\), separated by a comma.
 
-The distance string can be anything supported by ElasticSearch. See the ElasticSearch [documentation on distance units](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/common-options.html#distance-units) for more information.
+The distance string can be anything supported by ElasticSearch. A dot should be used as decimal separator. See the ElasticSearch [documentation on distance units](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/common-options.html#distance-units) for more information.
 
