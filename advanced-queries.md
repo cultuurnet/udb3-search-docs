@@ -55,8 +55,9 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | description.de | String |  |
 | description.en | String |  |
 | languages | String | See [Languages](/languages.md) |
-| labels | String | Complete matches only by default\* |
-| typicalAgeRange | Integer range |  |
+| labels | String | See [Labels](/labels.md). Complete matches only by default\* |
+| price | Integer | See [Price](/price.md) |
+| typicalAgeRange | Integer range | See [Age](/age.md) |
 | addressLocality | String |  |
 | postalCode | String | Currently only supports numerical codes \(eg. 3000\) |
 | streetAddress | String |  |

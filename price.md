@@ -41,6 +41,8 @@ GET https://search.uitdatabank.be/offers/?maxPrice=25
 
 ## Advanced queries
 
+Using the `q` parameter, you can execute more [advanced queries](/advanced-queries.md) than by using the `price` and/or `minPrice` and/or `maxPrice` URL parameter.
+
 ### Exact price
 
 It is possible to exactly match the price of an event or place:
@@ -50,8 +52,6 @@ GET https://search.uitdatabank.be/offers/?q=price:19.99 OR price:99.99
 ```
 
 ### Price range
-
-Using the `q` parameter, you can execute more [advanced queries](/advanced-queries.md) than by using the `price` and/or `minPrice` and/or `maxPrice` URL parameter.
 
 It is possible to search on a range of prices:
 
