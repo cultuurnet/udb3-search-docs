@@ -12,6 +12,7 @@
 * [Offers endpoint](offers-endpoint.md)
 * [Free text search](free-text-search.md)
 * [Languages](languages.md)
+* [Terms](terms.md)
 * [Labels](labels.md)
 * [Age](age.md)
 * [Price](price.md)
