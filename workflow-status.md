@@ -1,13 +1,13 @@
 # Workflow status
 
-You can search by price using two methods:
+You can search by workflow status using two methods:
 
 * URL parameter
 * Advanced queries
 
 ## URL parameter
 
-You can filter by workflow status using the `workflowStatus` URL parameter:
+You can filter by an exact match using the `workflowStatus` URL parameter:
 
 ```
 GET https://search.uitdatabank.be/offers/?workflowStatus=DRAFT
