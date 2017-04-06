@@ -67,6 +67,7 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | addressLocality | String |  |
 | postalCode | String | Currently only supports numerical codes \(eg. 3000\) |
 | streetAddress | String |  |
+| regions | Enum | See [Region](/region.md) |
 | location.id | String | Complete matches only by default\* |
 | location.name.nl | String |  |
 | location.name.fr | String |  |
