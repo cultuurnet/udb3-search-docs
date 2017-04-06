@@ -21,6 +21,8 @@ GET https://search.uitdatabank.be/offers/?regionId=gem-leuven
 
 This will return all events and places located in Leuven.
 
+The `regionId` URL parameter only accepts complete region ids, and wildcards are not supported. Any incomplete id will return zero results.
+
 Note that filtering the documents by region using the URL parameter does the filtering on-demand, which may be slower but more accurate. This is contrary to advanced queries, which use a cached list of regions per document.
 
 ## Advanced queries
@@ -34,6 +36,14 @@ GET https://search.uitdatabank.be/offers/?q=regions:gem-leuven OR regions:gem-ge
 ```
 
 This will return all events and places located in both Leuven and Gent.
+
+Note that wildcards are supported:
+
+```
+GET https://search.uitdatabank.be/offers/?q=regions:gem-zo*
+```
+
+This will return all events and places located in municipalities starting with "zo". For example Zonhoven, Zolder, ...
 
 The `regions` property is a cached list, so it may be slightly outdated, but it is faster than the `regionId` URL parameter.
 
