@@ -5,7 +5,9 @@ You can search by id using two methods:
 * URL parameter
 * Advanced queries
 
-This search is always done with an exact match. It is also possible to search for offer, location or organizer.
+This search is always done with an exact match. 
+
+It is possible to search by an offer id (event or place), and/or a related location id, and/or a related organizer id.
 
 ## URL parameter
 
@@ -20,6 +22,8 @@ GET https://search.uitdatabank.be/offers/?locationId=b8bff8fa-988a-44db-8dd8-70b
 ```
 GET https://search.uitdatabank.be/offers/?organizerId=7d1f485d-dab5-4ad2-8894-322060a2bc52
 ```
+
+Note that the locationId and organizerId parameters will return offer results, with a matching related location and/or organizer.
 
 ## Advanced queries
 
