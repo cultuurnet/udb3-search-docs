@@ -18,7 +18,7 @@ GET https://search.uitdatabank.be/offers/?facets[]=regions
 You can request multiple facets like this:
 
 ```
-GET https://search.uitdatabank.be/offers/?facets[]=regions&facets[]=types&...
+GET https://search.uitdatabank.be/offers/?facets[]=regions&facets[]=types
 ```
 
 Example response:
