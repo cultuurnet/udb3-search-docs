@@ -33,5 +33,15 @@ This endpoint supports the following global features:
 * [Pagination](/pagination.md)
 * [Embedding result bodies](/embedding-full-result-bodies.md)
 
+If you want to limit your search to specifically events or places, you can use the `/events/` and `/places/` endpoints instead:
 
+```
+GET https://search.uitdatabank.be/events/
+```
+
+```
+GET https://search.uitdatabank.be/places/
+```
+
+All parameters applicable to the `/offers/` endpoint are also applicable on `/events/` and `/places/`. Because of this, the documentation will generally use the `/offers/` endpoint in examples.
 
