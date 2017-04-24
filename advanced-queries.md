@@ -64,6 +64,7 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | audienceType | String | See [Audience type](/audience-type.md) |
 | labels | String | Complete matches only by default\* |
 | typicalAgeRange | Integer range |  |
+| addressCountry | Enum | See [Address](/address.md) |
 | addressLocality | String |  |
 | postalCode | String | Currently only supports numerical codes \(eg. 3000\) |
 | streetAddress | String |  |
