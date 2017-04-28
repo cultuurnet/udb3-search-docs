@@ -29,11 +29,25 @@ For more info, see the [advanced queries documentation](/advanced-queries.md).
 
 A workflow status can be any of the following values \(case-insensitive\):
 
-* DRAFT
-* READY\_FOR\_VALIDATION
-* APPROVED
-* REJECTED
-* DELETED
+* `DRAFT`
+* `READY_FOR_VALIDATION`
+* `APPROVED`
+* `REJECTED`
+* `DELETED`
+
+**Important!** Documents with a `DRAFT` status are not considered to be "available" by default, because they have not been published yet. Therefor, to find `DRAFT` documents, you will have to disable the default `availableFrom` and `availableTo` parameters like this:
+
+```
+GET https://search.uitdatabank.be/offers/?workflowStatus=DRAFT&availableFrom=*&availableTo=*
+```
+
+Or when using advanced queries:
+
+```
+GET https://search.uitdatabank.be/offers/?availableFrom=*&availableTo=*&q=workflowStatus:DRAFT
+```
+
+See Availability for more info.
 
 
 
