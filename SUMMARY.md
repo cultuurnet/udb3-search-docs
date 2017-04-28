@@ -13,6 +13,7 @@
 * [Free text search](free-text-search.md)
 * [Languages](languages.md)
 * [Id](id.md)
+* [Availability](availability.md)
 * [Workflow status](workflow-status.md)
 * [Terms](terms.md)
 * [Labels](labels.md)
