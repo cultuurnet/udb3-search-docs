@@ -46,6 +46,7 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | Field | Type | Comments |
 | :--- | :--- | :--- |
 | id | String | Complete matches only by default\* |
+| availableRange | Date range | See [Availability](/availability.md) |
 | workflowStatus | Enum \(String\) | See [Workflow status](/workflow-status.md) |
 | name.nl | String |  |
 | name.fr | String |  |
