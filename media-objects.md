@@ -35,7 +35,7 @@ GET https://search.uitdatabank.be/offers/?q=mediaObjectsCount:1
 All events and places that have less than 10 media objects:
 
 ```
-GET https://search.uitdatabank.be/offers/?q=mediaObjectsCount:<1
+GET https://search.uitdatabank.be/offers/?q=mediaObjectsCount:<10
 ```
 
 All events and places that have 5 to 10 media objects:
