@@ -64,6 +64,7 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | price | Integer | See [Price](/price.md) |
 | typicalAgeRange | Integer range | See [Age](/age.md) |
 | audienceType | String | See [Audience type](/audience-type.md) |
+| mediaObjectsCount | Integer | See [Media objects](/media-objects.md) |
 | labels | String | Complete matches only by default\* |
 | typicalAgeRange | Integer range |  |
 | addressCountry | Enum | See [Address](/address.md) |
