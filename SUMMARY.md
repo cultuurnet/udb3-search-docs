@@ -22,6 +22,7 @@
 * [Age](age.md)
 * [Price](price.md)
 * [Audience type](audience-type.md)
+* [Media objects](media-objects.md)
 * [Address](address.md)
 * [Region](region.md)
 * [Geo distance](geo-distance.md)
