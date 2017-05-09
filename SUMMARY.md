@@ -14,6 +14,7 @@
 * [Languages](languages.md)
 * [Id](id.md)
 * [Date & time](date.md)
+* [Calendar type](calendar-type.md)
 * [Availability](availability.md)
 * [Workflow status](workflow-status.md)
 * [Terms](terms.md)
