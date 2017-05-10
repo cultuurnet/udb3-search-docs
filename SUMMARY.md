@@ -18,6 +18,7 @@
 * [Availability](availability.md)
 * [Workflow status](workflow-status.md)
 * [Terms](terms.md)
+* [UiTPAS](uitpas.md)
 * [Labels](labels.md)
 * [Age](age.md)
 * [Price](price.md)
