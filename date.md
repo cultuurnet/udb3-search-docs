@@ -12,6 +12,8 @@ When searching by date using the `dateFrom` and `dateTo` URL parameters, you wil
 * Events and places with `openingHours`, of which at least one of the `openingHours` intersects with the given `dateFrom` and `dateTo`. For example a place that is open on Mondays from 08:00 to 12:00 will be a match for a date query that includes a Monday and intersects with those hours.
 * Events and places that are `permanent`  and have no opening hours are always considered to be matches when searching by date.
 
+**Note that the "+" sign should be encoded for URLs \(as %2B\)!** Otherwise it will be interpreted as whitespace and the given date time will be considered invalid.
+
 **Examples**
 
 Get all events that occur on a given day, and all places that are open on that same day:
