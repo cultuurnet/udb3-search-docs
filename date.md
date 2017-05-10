@@ -19,25 +19,31 @@ When searching by date using the `dateFrom` and `dateTo` URL parameters, you wil
 Get all events that occur on a given day, and all places that are open on that same day:
 
 ```
-GET https://search.uitdatabank.be/offers/?dateFrom=2017-01-01T00:00:00+01:00&dateTo=2017-01-01T23:59:59+01:00
+From: 2017-01-01T00:00:00+01:00
+To: 2017-01-01T23:59:59+01:00
+GET https://search.uitdatabank.be/offers/?dateFrom=2017-01-01T00:00:00%2B01:00&dateTo=2017-01-01T23:59:59%2B01:00
 ```
 
 Get all events that occur on an exact moment, and all places that are open at that same moment:
 
 ```
-GET https://search.uitdatabank.be/offers/?dateFrom=2017-01-01T12:00:00+01:00&dateTo=2017-01-01T12:00:00+01:00
+From: 2017-01-01T12:00:00+01:00
+To: 2017-01-01T12:00:00+01:00
+GET https://search.uitdatabank.be/offers/?dateFrom=2017-01-01T12:00:00%2B01:00&dateTo=2017-01-01T12:00:00%2B01:00
 ```
 
 Get all events that occur starting from a specific moment, and all places that are open at some point from that moment on:
 
 ```
-GET https://search.uitdatabank.be/offers/?dateFrom=2017-01-01T12:00:00+01:00
+From: 2017-01-01T12:00:00+01:00
+GET https://search.uitdatabank.be/offers/?dateFrom=2017-01-01T12:00:00%2B01:00
 ```
 
 Get all events that occured at least once before a given moment, and all places that were open at some point before that moment:
 
 ```
-GET https://search.uitdatabank.be/offers/?dateTo=2017-01-01T12:00:00+01:00
+To: 2017-01-01T12:00:00+01:00
+GET https://search.uitdatabank.be/offers/?dateTo=2017-01-01T12:00:00%2B01:00
 ```
 
 ## Advanced queries
@@ -49,13 +55,15 @@ To search by date using advanced queries, you can use the `dateRange` field that
 Single value example:
 
 ```
-GET https://search.uitdatabank.be/offers/?q=dateRange:2017-01-01T00:00:00+01:00
+Date range: 2017-01-01T00:00:00+01:00
+GET https://search.uitdatabank.be/offers/?q=dateRange:2017-01-01T00:00:00%2B01:00
 ```
 
 Range example:
 
 ```
-GET https://search.uitdatabank.be/offers/?q=dateRange:[2017-01-01T00:00:00+01:00 TO 2017-01-01T23:59:59+01:00]
+Date range: [2017-01-01T00:00:00+01:00 TO 2017-01-01T23:59:59+01:00]
+GET https://search.uitdatabank.be/offers/?q=dateRange:[2017-01-01T00:00:00%2B01:00 TO 2017-01-01T23:59:59%2B01:00]
 ```
 
 Same as the URL parameters, the expected value is an `ISO-8601` datetime including a timezone offset.
