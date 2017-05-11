@@ -2,6 +2,11 @@
 
 You can sort events and places either by `score` \(relevance\), or by their `availableTo` date \(most commonly used to show events that will be ending soon first\).
 
+It is possible to change the sort `order`:
+
+* Ascending order \(from smallest to biggest value\) by using `asc`
+* Descending order \(from biggest to smallest value\) by using `desc`
+
 Example:
 
 ```
