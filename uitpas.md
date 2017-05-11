@@ -10,7 +10,7 @@ You can search for all UiTPAS related events or places by setting the `uitpas` U
 GET https://search.uitdatabank.be/offers/?uitpas=true
 ```
 
-It is also possible to search for all events or places which are not marked as UiTPAS events by setting the `uitpas` URL parameter to false:
+It is also possible to search for all events or places which are not marked as UiTPAS by setting the `uitpas` URL parameter to false:
 
 ```
 GET https://search.uitdatabank.be/offers/?uitpas=false
