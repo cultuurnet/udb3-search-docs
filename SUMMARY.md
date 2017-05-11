@@ -28,4 +28,5 @@
 * [Geo distance](geo-distance.md)
 * [Advanced queries](advanced-queries.md)
 * [Facet counts](facet-counts.md)
+* [Sorting](sorting.md)
 
