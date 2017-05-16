@@ -11,23 +11,28 @@ An important difference between the two is that the filtering by region uses a c
 
 ## URL parameter
 
-You can use the `regionId` URL parameter to filter all documents by a \(single\) specific region.
+You can use the `regions` URL parameter to filter all documents by one or more regions.
 
 For example:
 
 ```
-GET https://search.uitdatabank.be/offers/?regionId=gem-leuven
+GET https://search.uitdatabank.be/offers/?regions=gem-leuven
 ```
 
 This will return all events and places located in Leuven.
 
-The `regionId` URL parameter only accepts complete region ids, and wildcards are not supported. Any incomplete id will return zero results.
+If you want to filter multiple regions, pass them along as separate parameters
+```
+GET https://search.uitdatabank.be/offers/?regions[]=prv-vlaams-brabant&regions[]=gem-leuven
+```
+
+The `regions` URL parameter only accepts complete region ids, and wildcards are not supported. Any incomplete id will return zero results.
 
 Note that filtering the documents by region using the URL parameter does the filtering on-demand, which may be slower but up to date. This is contrary to advanced queries, which use a cached list of regions per document.
 
 ## Advanced queries
 
-Using advanced queries, you can create more complex queries than by using the `regionId` URL parameter.
+Using advanced queries, you can create more complex queries than by using the `regions` URL parameter.
 
 For example:
 
@@ -45,7 +50,7 @@ GET https://search.uitdatabank.be/offers/?q=regions:gem-zo*
 
 This will return all events and places located in municipalities starting with "zo". For example Zonhoven, Zolder, ...
 
-The `regions` property is a cached list, so it may be slightly outdated, but it is faster than the `regionId` URL parameter.
+The `regions` property is a cached list, so it may be slightly outdated, but it is faster than the `regions` URL parameter.
 
 ## Available regions and their ids
 
