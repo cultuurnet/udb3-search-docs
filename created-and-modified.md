@@ -41,7 +41,7 @@ For example to search for all offers created on or after a specific date use the
 GET https://search.uitdatabank.be/offers/?q=created:[2017-04-11T12:08:01%2B01:00 TO *]
 ```
 
-The next example searches for all offers modified before or on a specific data:
+The next example searches for all offers modified before or on a specific date:
 
 ```
 GET https://search.uitdatabank.be/offers/?q=modified:[* TO 2017-04-11T12:08:01%2B01:00]
