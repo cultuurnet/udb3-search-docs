@@ -88,6 +88,8 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | organizer.name.fr | String |  |
 | organizer.labels | String | Complete matches only by default\* |
 | creator | String | See [Creator](/creator.md) |
+| createdRange | DateRange | See [Created and Modified](/created-and-modified.md) |
+| modifiedRange | DateRange | See [Created and Modified](/created-and-modified.md) |
 
 \* Wildcards allowed to search for partial matches
 
