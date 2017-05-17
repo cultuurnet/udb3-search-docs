@@ -4,9 +4,7 @@ UiTdatabank v3 keeps track of offer creation en modification dates. This metdata
 
 * `createdFrom` \(ISO-8601 datetime, eg. "2017-04-01T12:08:01+01:00"\)
 * `createdTo` \(ISO-8601 datetime, eg. "2017-04-20T12:08:01+01:00"\)
-
 * `modifiedFrom` \(ISO-8601 datetime, eg. "2017-04-01T12:08:01+01:00"\)
-
 * `modifiedTo` \(ISO-8601 datetime, eg. "2017-04-10T12:08:01+01:00"\)
 
 **Note that the "+" sign should be encoded for URLs \(as %2B\)!** Otherwise it will be interpreted as whitespace and the given date time will be considered invalid.
