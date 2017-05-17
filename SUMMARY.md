@@ -18,6 +18,7 @@
 * [Availability](availability.md)
 * [Workflow status](workflow-status.md)
 * [Terms](terms.md)
+* [UiTPAS](uitpas.md)
 * [Labels](labels.md)
 * [Age](age.md)
 * [Price](price.md)
@@ -28,4 +29,6 @@
 * [Geo distance](geo-distance.md)
 * [Advanced queries](advanced-queries.md)
 * [Facet counts](facet-counts.md)
+* [Creator](creator.md)
+* [Sorting](sorting.md)
 
