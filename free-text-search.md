@@ -10,7 +10,7 @@ GET https://search.uitdatabank.be/offers/?text=dit is een test
 GET https://search.uitdatabank.be/offers/?q=dit is een test
 ```
 
-The main difference between the two is that `q` allows you to search through other fields than the pre-defined free text search fields. 
+The main difference between the two is that `q` allows you to search through other fields than the pre-defined free text search fields.
 
 For example, the following queries will NOT return the same results:
 
@@ -52,7 +52,7 @@ GET https://search.uitdatabank.be/offers/?text=(wandelen OR fietsen) AND dijle
 
 See the [Query String Query syntax for ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax) for more info, or more documentation on [advanced queries](/advanced-queries.md).
 
-Note: to specifically define the fields you want to search on, or to search through fields that are not searched through by default, you should use the `q` parameter.
+Note: if you want to specify the fields you want to search on, or search through fields that are not included by default, you should use the `q` parameter.
 
 ## Exact matches
 
