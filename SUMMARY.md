@@ -10,6 +10,7 @@
 ## Searching events & places
 
 * [Offers endpoint](offers-endpoint.md)
+* [Default filters](default-filters.md)
 * [Free text search](free-text-search.md)
 * [Languages](languages.md)
 * [Id](id.md)
