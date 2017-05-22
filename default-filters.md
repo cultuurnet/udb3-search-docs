@@ -9,7 +9,7 @@ The search API applies a couple of filters by default to provide you with the mo
 
 You can either reset these filters individually, or disable them all at once.
 
-## Individually
+## Individually reset
 
 [**Workflow status**](/workflow-status.md)**:**
 
