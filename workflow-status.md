@@ -5,7 +5,15 @@ You can search by workflow status using two methods:
 * URL parameter
 * Advanced queries
 
+By default the API filters out any offers that are not `APPROVED` or `READY_FOR_VALIDATION`. You can reset and/or override this by using the URL parameter as described below. Alternatively you can use the `disableDefaultFilters` parameter, as described in [Default filters](/default-filters.md).
+
 ## URL parameter
+
+You can reset the default `workflowStatus` filter by using a wildcard character:
+
+```
+GET https://search.uitdatabank.be/offers/?workflowStatus=*
+```
 
 You can filter by an exact match using the `workflowStatus` URL parameter:
 
@@ -20,8 +28,10 @@ Using the `q` parameter, you can execute more [advanced queries](/advanced-queri
 For example:
 
 ```
-GET https://search.uitdatabank.be/offers/?q=workflowStatus:DRAFT or workflowStatus:READY_FOR_VALIDATION
+GET https://search.uitdatabank.be/offers/?workflowStatus=*&q=workflowStatus:DRAFT or workflowStatus:READY_FOR_VALIDATION
 ```
+
+Note that you still have to reset the default `workflowStatus` filter first. Alternatively you can use the `disableDefaultFilters` parameter, as described in [Default filters](/default-filters.md).
 
 For more info, see the [advanced queries documentation](/advanced-queries.md).
 
@@ -48,6 +58,4 @@ GET https://search.uitdatabank.be/offers/?availableFrom=*&availableTo=*&q=workfl
 ```
 
 See Availability for more info.
-
-
 

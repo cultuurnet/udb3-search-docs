@@ -25,6 +25,12 @@ GET https://search.uitdatabank.be/offers/?availableFrom=*&availableTo=*
 
 By disabling these filters, you will get all events and places that are currently available, as well as events and places that were available in the past or will be available in the future.
 
+Alternatively you can disable all default filters at once, as described in [Default filters](/default-filters.md):
+
+```
+GET https://search.uitdatabank.be/offers/?disableDefaultFilters=true
+```
+
 ## Retrieving all currently available events and places, and those that were available in the past
 
 To get all events and places that were available in the past as well as available right now, you can simply disable the `availableFrom` filter:
@@ -69,7 +75,7 @@ This will return all events and places that were, at some point, available befor
 
 ## Advanced queries
 
-You can also search by availability using [advanced queries](/advanced-queries.md). **However! You should always reset the default `availableFrom` and `availableTo` if you want to search by availability in your advanced queries.**
+You can also search by availability using [advanced queries](/advanced-queries.md). **However! You should always reset the default **`availableFrom`** and **`availableTo`** if you want to search by availability in your advanced queries.**
 
 To search by availability in advanced queries, you can use the `availableRange` field and either look for a specific date, or a range.
 
@@ -86,6 +92,4 @@ GET https://search.uitdatabank.be/offers/?q=availableRange:[2017-01-01T00:00:00%
 ```
 
 For more info, see the documentation for [advanced queries](/advanced-queries.md).
-
-
 
