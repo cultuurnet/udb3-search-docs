@@ -65,3 +65,15 @@ GET https://search.uitdatabank.be/offers/?q=!(_exists_:name.fr) OR !(_exists_:de
 
 This will return all documents that are missing French translations for either `name` and/or `description`.
 
+Alternatively, you use the `completedLanguages` URL parameter \(and field in [advanced queries](/advanced-queries.md)\) to only look for documents that are fully translated to a specific language.
+
+```
+GET https://search.uitdatabank.be/offers/?completedLanguages[]=fr
+```
+
+```
+GET https://search.uitdatabank.be/offers/?q=completedLanguages:fr OR completedLanguages:de
+```
+
+Note that if an optional field is left empty in all languages, a translation can still be considered to be complete if all other fields that have a value are translated.
+
