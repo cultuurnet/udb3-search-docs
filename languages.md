@@ -77,3 +77,21 @@ GET https://search.uitdatabank.be/offers/?q=completedLanguages:fr OR completedLa
 
 Note that if an optional field is left empty in all languages, a translation can still be considered to be complete if all other fields that have a value are translated.
 
+## Main Language
+
+Traditionally, each document starts as Dutch and can then be translated to other languages. However, in the future the main language of a document might become configurable. To accommodate this, each document already has a `mainLanguage` property on which you can also search in the Search API.
+
+For example:
+
+```
+GET https://search.uitdatabank.be/offers/?mainLanguage=nl
+```
+
+Or using [advanced queries](/advanced-queries.md):
+
+```
+GET https://search.uitdatabank.be/offers/?q=mainLanguage:nl
+```
+
+
+
