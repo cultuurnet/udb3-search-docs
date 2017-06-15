@@ -68,10 +68,22 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 | mediaObjectsCount | Integer | See [Media objects](/media-objects.md) |
 | labels | String | Complete matches only by default\* |
 | typicalAgeRange | Integer range |  |
-| addressCountry | Enum | See [Address](/address.md) |
-| addressLocality | String | See [Address](/address.md) |
-| postalCode | String | See [Address](/address.md) |
-| streetAddress | String | See [Address](/address.md) |
+| address.nl.addressCountry | Enum | See [Address](/address.md) |
+| address.nl.addressLocality | String | See [Address](/address.md) |
+| address.nl.postalCode | String | See [Address](/address.md) |
+| address.nl.streetAddress | String | See [Address](/address.md) |
+| address.fr.addressCountry | Enum | See [Address](/address.md) |
+| address.fr.addressLocality | String | See [Address](/address.md) |
+| address.fr.postalCode | String | See [Address](/address.md) |
+| address.fr.streetAddress | String | See [Address](/address.md) |
+| address.de.addressCountry | Enum | See [Address](/address.md) |
+| address.de.addressLocality | String | See [Address](/address.md) |
+| address.de.postalCode | String | See [Address](/address.md) |
+| address.de.streetAddress | String | See [Address](/address.md) |
+| address.en.addressCountry | Enum | See [Address](/address.md) |
+| address.en.addressLocality | String | See [Address](/address.md) |
+| address.en.postalCode | String | See [Address](/address.md) |
+| address.en.streetAddress | String | See [Address](/address.md) |
 | regions | Enum | See [Region](/region.md) |
 | location.id | String | Complete matches only by default\* |
 | location.name.nl | String |  |
