@@ -45,63 +45,64 @@ GET https://search.uitdatabank.be/offers/?q=labels:"\"dag van de fiets\""
 
 | Field | Type | Comments |
 | :--- | :--- | :--- |
-| id | String | Complete matches only by default\* |
-| calendarType | String | Complete matches only by default\* |
+| id | String | Looks for complete matches |
+| calendarType | String | Looks for complete matches |
 | dateRange | Date range | See [Date & time](/date.md) |
 | availableRange | Date range | See [Availability](/availability.md) |
 | workflowStatus | Enum \(String\) | See [Workflow status](/workflow-status.md) |
-| name.nl | String |  |
-| name.fr | String |  |
-| name.de | String |  |
-| name.en | String |  |
-| description.nl | String |  |
-| description.fr | String |  |
-| description.de | String |  |
-| description.en | String |  |
+| name.{[lang](/languages.md)} | String |  |
+| description.{[lang](/languages.md)} | String |  |
 | languages | String | See [Languages](/languages.md) |
-| terms.id | String | Complete matches only by default\* |
-| terms.label | String | Complete matches only by default\* |
-| labels | String | See [Labels](/labels.md). Complete matches only by default\* |
+| terms.id | String | Looks for complete matches |
+| terms.label | String | Looks for complete matches |
+| labels | String | See [Labels](/labels.md). Looks for complete matches |
 | price | Integer | See [Price](/price.md) |
 | typicalAgeRange | Integer range | See [Age](/age.md) |
 | audienceType | String | See [Audience type](/audience-type.md) |
 | mediaObjectsCount | Integer | See [Media objects](/media-objects.md) |
-| labels | String | Complete matches only by default\* |
+| labels | String | Looks for complete matches |
 | typicalAgeRange | Integer range |  |
-| address.nl.addressCountry | Enum | See [Address](/address.md) |
-| address.nl.addressLocality | String | See [Address](/address.md) |
-| address.nl.postalCode | String | See [Address](/address.md) |
-| address.nl.streetAddress | String | See [Address](/address.md) |
-| address.fr.addressCountry | Enum | See [Address](/address.md) |
-| address.fr.addressLocality | String | See [Address](/address.md) |
-| address.fr.postalCode | String | See [Address](/address.md) |
-| address.fr.streetAddress | String | See [Address](/address.md) |
-| address.de.addressCountry | Enum | See [Address](/address.md) |
-| address.de.addressLocality | String | See [Address](/address.md) |
-| address.de.postalCode | String | See [Address](/address.md) |
-| address.de.streetAddress | String | See [Address](/address.md) |
-| address.en.addressCountry | Enum | See [Address](/address.md) |
-| address.en.addressLocality | String | See [Address](/address.md) |
-| address.en.postalCode | String | See [Address](/address.md) |
-| address.en.streetAddress | String | See [Address](/address.md) |
+| address.{[lang](/languages.md)}.addressCountry | Enum | See [Address](/address.md) |
+| address.{[lang](/languages.md)}.addressLocality | String | See [Address](/address.md) |
+| address.{[lang](/languages.md)}.postalCode | String | See [Address](/address.md) |
+| address.{[lang](/languages.md)}.streetAddress | String | See [Address](/address.md) |
 | regions | Enum | See [Region](/region.md) |
-| location.id | String | Complete matches only by default\* |
-| location.name.nl | String |  |
-| location.name.fr | String |  |
-| location.name.de | String |  |
-| location.name.en | String |  |
-| location.terms.id | String | Complete matches only by default\* |
-| location.terms.label | String | Complete matches only by default\* |
-| location.labels | String | Complete matches only by default\* |
-| organizer.id | String | Complete matches only by default\* |
-| organizer.name.nl | String |  |
-| organizer.name.fr | String |  |
-| organizer.name.de | String |  |
-| organizer.name.fr | String |  |
-| organizer.labels | String | Complete matches only by default\* |
+| location.id | String | Looks for complete matches |
+| location.name.{[lang](/languages.md)} | String |  |
+| location.terms.id | String | Looks for complete matches |
+| location.terms.label | String | Looks for complete matches |
+| location.labels | String | Looks for complete matches |
+| organizer.id | String | Looks for complete matches |
+| organizer.name.{[lang](/languages.md)} | String |  |
+| organizer.labels | String | Looks for complete matches |
 | creator | String | See [Creator](/creator.md) |
 | createdRange | DateRange | See [Created and Modified](/created-and-modified.md) |
 | modifiedRange | DateRange | See [Created and Modified](/created-and-modified.md) |
 
-\* Wildcards allowed to search for partial matches
+### Notes
+* Wildcards (`*` or `?`) allowed to search for partial matches. (See [ElasticSearch documentation on syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html\#query-string-syntax))
+* `{lang}` should always be replaced by either a specific language (`nl`, `fr`, ...) or an **escaped** wildcard (`\*`)
+
+## Examples
+
+Searching by label `fietsen`
+
+```
+GET https://search.uitdatabank.be/offers/?q=labels:fietsen
+```
+
+Searching by all labels that start with `fiets`
+```
+GET https://search.uitdatabank.be/offers/?q=labels:fiets*
+```
+
+Searching by `postalCode` in the `nl` address:
+```
+GET https://search.uitdatabank.be/offers/?q=address.nl.postalCode:3000
+```
+
+Searching by `postalCode` in any address translation:
+```
+GET https://search.uitdatabank.be/offers/?q=address.\*.postalCode:3000
+```
 
