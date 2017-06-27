@@ -1,4 +1,4 @@
-# Metadata
+# Created and modified
 
 UiTdatabank v3 keeps track of offer creation en modification dates. This metdata can be queried with the following parameters:
 
