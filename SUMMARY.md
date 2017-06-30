@@ -3,6 +3,7 @@
 ## Getting started
 
 * [Introduction](README.md)
+* [Authentication](authentication.md)
 * [Pagination](pagination.md)
 * [Embedding result bodies](embedding-full-result-bodies.md)
 * [Case sensitivity](case-sensitivity.md)
@@ -34,3 +35,4 @@
 * [Metadata](metadata.md)
 * [Creator](creator.md)
 * [Created and Modified](created-and-modified.md)
+
