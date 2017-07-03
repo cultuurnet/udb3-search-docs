@@ -23,7 +23,7 @@ For example:
 GET https://search.uitdatabank.be/offers/?apiKey=c7c95c31-93b0-4a3b-8758-770e76d5ed46
 ```
 
-## Query parameter
+## Request header
 
 You can send your API key as a separate header like this \(for example using `curl`\):
 
