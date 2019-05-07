@@ -29,6 +29,7 @@
 * [Address](address.md)
 * [Region](region.md)
 * [Geo distance](geo-distance.md)
+* [Geo bounds](geo-bounds.md)
 * [Advanced queries](advanced-queries.md)
 * [Facet counts](facet-counts.md)
 * [Sorting](sorting.md)
