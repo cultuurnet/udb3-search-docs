@@ -1,3 +1,7 @@
+# WARNING!
+
+This repository is obsolete. See https://docs.publiq.be for the latest UiTdatabank API documentation.
+
 # Introduction
 
 This documentation provides an overview of all public features available in CultuurNet's Search API v3 for UiTdatabank.
